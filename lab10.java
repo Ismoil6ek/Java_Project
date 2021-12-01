@@ -13,7 +13,7 @@ public class lab10
 	public static void main(String[] args) throws SQLException
 	{
 	// Step 2: Allocate a database 'Connection' object
-    Connection conn = DriverManager.getConnection( "jdbc:mysql://localhost:3306/BMI_DB?autoReconnect=true&useSSL=false", "root", "ibrohim12345");
+    Connection conn = DriverManager.getConnection( "jdbc:mysql://localhost:3306/BMI_DB?autoReconnect=true&useSSL=false", "root", "");
     // MySQL: "jdbc:mysql://hostname:port/databaseName", "username", "password"
     			
 	// Step 3: Allocate a 'Statement' object in the Connection
