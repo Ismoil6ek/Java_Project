@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Books.Controller">
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+
+    <Label text="Books" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <TableView fx:id="tblAddresses" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <columns>
+            <TableColumn prefWidth="100" text="Title">
+                <cellValueFactory>
+                    <PropertyValueFactory property="title" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="100" text="Author">
+                <cellValueFactory>
+                    <PropertyValueFactory property="author" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="100" text="Subject">
+                <cellValueFactory>
+                    <PropertyValueFactory property="subject" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="200" text="ISBN">
+                <cellValueFactory>
+                    <PropertyValueFactory property="isbn" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="100" text="Published date">
+                <cellValueFactory>
+                    <PropertyValueFactory property="publishedDate" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="100" text="Student">
+                <cellValueFactory>
+                    <PropertyValueFactory property="student" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    <VBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <TextField fx:id="txtAuthor" prefWidth="90" promptText="author" />
+        <TextField fx:id="txtTitle" prefWidth="90" promptText="title" />
+        <TextField fx:id="txtSubject" prefWidth="90" promptText="subject" />
+        <TextField fx:id="txtISBN" prefWidth="150" promptText="ISBN" />
+        <TextField fx:id="txtDate" prefWidth="100" promptText="Published date" />
+        <TextField fx:id="txtStudent" prefWidth="100" promptText="student" />
+        <CheckBox fx:id="checkBorrowed" text="Borrowed" />
+
+    </VBox>
+    <HBox fx:id="hb" GridPane.rowIndex="2">
+        <Button fx:id="btnView" visible="false" onAction="#viewBook" text="View" />
+        <Button fx:id="btnAdd" visible="false" onAction="#addBook" text="Add" />
+        <Button fx:id="btnEdit" visible="false" onAction="#editBook" text="Edit" />
+        <Button fx:id="btnDelete" visible="false" onAction="#deleteBook" text="Delete" />
+        <Button onAction="#filter"  text="Filter"/>
+    </HBox>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<GridPane xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx"
+          fx:controller="studentUser.FirstMenuController"
+          prefHeight="400.0" prefWidth="600.0"
+          alignment="top_center"
+          hgap="10" vgap="10">
+
+    <padding>
+        <Insets top="10" bottom="10" right="10" left="10"/>
+    </padding>
+
+    <VBox spacing="15">
+            <Button fx:id="btnLogout" text="Logout"
+                    prefWidth="170"
+                    GridPane.rowIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER"/>
+            <Button fx:id="btnAllLibrarian" text="ALL Librarian" prefWidth="170"
+                    onAction="#AllLibrarians"
+                    GridPane.rowIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER"/>
+            <Button fx:id="btnBooks" text="ALL Books" prefWidth="170"
+                    onAction="#AllBook"
+                    GridPane.rowIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER"/>
+            <Button fx:id="btnStudents" text="ALL Students" prefWidth="170"
+                    onAction="#AllStudents"
+                    GridPane.rowIndex="3" GridPane.columnSpan="2" GridPane.halignment="CENTER"/>
+            <Button fx:id="btnOverDue" text="Overdue Students" prefWidth="170"
+                    onAction="#overdue"
+                    GridPane.rowIndex="4" visible="false" GridPane.columnSpan="2" GridPane.halignment="CENTER"/>
+            <Button fx:id="btnMonthReport" text="Overdue Students" prefWidth="170"
+                    GridPane.rowIndex="5" visible="false" GridPane.columnSpan="2" GridPane.halignment="CENTER"/>
+            <Button fx:id="btnAboutMe" text="Personal Details" prefWidth="170"
+                    onAction="#AboutMe"
+                    GridPane.rowIndex="6" visible="false" GridPane.columnSpan="2" GridPane.halignment="CENTER"/>
+            <Button fx:id="btnReport" text="Monthly report" prefWidth="170"
+                    onAction="#AboutMe"
+                    GridPane.rowIndex="6" visible="false" GridPane.columnSpan="2" GridPane.halignment="CENTER"/>
+    </VBox>
+</GridPane>

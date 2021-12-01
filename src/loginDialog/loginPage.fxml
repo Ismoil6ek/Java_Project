@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal"
+          fx:controller="loginDialog.loginController"
+          alignment="top_center"
+          hgap="10" vgap="10"
+          prefHeight="17.0" prefWidth="182.0">
+
+   <padding>
+      <Insets top="10" bottom="10" right="10" left="10"/>
+   </padding>
+
+   <Label fx:id="lblUsername" text="Username" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+   <TextField fx:id="txtUsername" promptText="Username" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+   <Label fx:id="lblPassword" text="Password" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+   <PasswordField fx:id="fldPassword" promptText="Password" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+   <HBox spacing="10" GridPane.rowIndex="2" GridPane.columnSpan="2">
+      <fx:define>
+         <ToggleGroup fx:id="optionsGroup"/>
+      </fx:define>
+      <RadioButton fx:id="rbOption1"  text="Admin" toggleGroup="$optionsGroup"/>
+      <RadioButton fx:id="rbOption2"  text="Librarian" toggleGroup="$optionsGroup"/>
+      <RadioButton fx:id="rbOption3"  text="Student" toggleGroup="$optionsGroup"/>
+   </HBox>
+
+   <Button onAction="#handleLogin"
+           fx:id="btnLogin"
+           text="Login"
+           prefWidth="150"
+           GridPane.rowIndex="3" GridPane.columnSpan="2" GridPane.halignment="CENTER"
+   />
+
+</GridPane>
