@@ -7,7 +7,7 @@ import java.sql.*;
 public class UsersRepository {
     private static UsersRepository instance;
 
-    private final String DATABASE_URL = "jdbc:derby:./db/users.sql";
+    private final String DATABASE_URL = "jdbc:derby:C:/Users/User/Desktop/Java_Project/db/users";
 
     private final String GET_ALL_QUERY = "SELECT * FROM users";
     private final String GET_QUERY = "SELECT * FROM users WHERE id=?";

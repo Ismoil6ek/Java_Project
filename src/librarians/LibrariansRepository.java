@@ -10,7 +10,7 @@ import java.sql.*;
 public class LibrariansRepository {
     private static LibrariansRepository instance;
 
-    private final String DATABASE_URL = "jdbc:derby:./db/librarians";
+    private final String DATABASE_URL = "jdbc:derby:C:/Users/User/Desktop/Java_Project/db/librarians";
     private final String GET_ALL_QUERY = "SELECT * FROM librarians";
     private final String GET_QUERY = "SELECT * FROM librarians WHERE id=?";
     private final String ADD_QUERY = "INSERT INTO librarians (nameN,login,password,roleN) VALUES(?,?,?,?)";
