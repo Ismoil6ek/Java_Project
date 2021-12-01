@@ -2,6 +2,7 @@ module group.project.java.coders {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
+    requires javafx.base;
 
     opens loginDialog;
     opens studentUser;
