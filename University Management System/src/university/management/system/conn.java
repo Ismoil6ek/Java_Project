@@ -8,12 +8,12 @@ public class conn{
     public conn(){  
         try{  
             Class.forName("com.mysql.jdbc.Driver");  
-            c =DriverManager.getConnection("jdbc:mysql:///ums","root","");    
-            s =c.createStatement();  
+            c =DriverManager.getConnection("jdbc:mysql:///ums","root","");
+            s =c.createStatement();
             
            
         }catch(Exception e){ 
             System.out.println(e);
-        }  
+        }
     }  
 }  
