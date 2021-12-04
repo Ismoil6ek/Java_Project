@@ -48,6 +48,7 @@ public class Project extends JFrame implements ActionListener{
   
         JMenu user = new JMenu("Details");
         JMenuItem u1 = new JMenuItem("Student Details");
+
         
         u1.setFont(new Font("monospaced",Font.BOLD,16));
         ImageIcon icon4 = new ImageIcon(ClassLoader.getSystemResource("university/management/system/icons/icon3.png"));
