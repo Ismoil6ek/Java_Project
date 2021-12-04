@@ -21,13 +21,13 @@ class UpdateStudent implements ActionListener{
     UpdateStudent(){;
         f=new JFrame("Update Student details");
         f.setSize(900,650);
-        f.setLocation(450,150);
+        f.setLocation(230,60);
         f.setBackground(Color.white);
         f.setLayout(null);
 
         JLabel l1 = new JLabel("Enter ID number to update the data of student");
         l1.setBounds(50,100,500,30);
-        l1.setFont(new Font("serif",Font.ITALIC,20));
+        l1.setFont(new Font("chivo",Font.ITALIC,20));
         f.add(l1);
         
         t12 = new JTextField();
@@ -35,7 +35,7 @@ class UpdateStudent implements ActionListener{
         f.add(t12);
         
         b2 = new JButton("Update");
-        b2.setBackground(Color.BLACK);
+        b2.setBackground(new Color(57, 88, 119));
         b2.setForeground(Color.WHITE);
         b2.setBounds(720,100,100,30);
         f.add(b2);
@@ -44,14 +44,14 @@ class UpdateStudent implements ActionListener{
         
         id8 = new JLabel("Update Student Details:");
         id8.setBounds(50,10,500,50);
-        id8.setFont(new Font("serif",Font.ITALIC,40));
+        id8.setFont(new Font("chivo",Font.ITALIC,40));
         id8.setForeground(Color.black);
         f.add(id8);
 
 
         id1 = new JLabel("Full name");
         id1.setBounds(50,180,100,30);
-        id1.setFont(new Font("serif",Font.BOLD,20));
+        id1.setFont(new Font("chivo",Font.BOLD,20));
         f.add(id1);
 
         t1=new JTextField();
@@ -60,7 +60,7 @@ class UpdateStudent implements ActionListener{
 
         id2 = new JLabel("Entrance date");
         id2.setBounds(400,180,200,30);
-        id2.setFont(new Font("serif",Font.BOLD,20));
+        id2.setFont(new Font("chivo",Font.BOLD,20));
         f.add(id2);
 
         t2=new JTextField();
@@ -69,7 +69,7 @@ class UpdateStudent implements ActionListener{
 
         id3= new JLabel("Address");
         id3.setBounds(50,240,100,30);
-        id3.setFont(new Font("serif",Font.BOLD,20));
+        id3.setFont(new Font("chivo",Font.BOLD,20));
         f.add(id3);
 
         t3=new JTextField();
@@ -78,7 +78,7 @@ class UpdateStudent implements ActionListener{
 
         id4= new JLabel("Date of birth");
         id4.setBounds(400,240,200,30);
-        id4.setFont(new Font("serif",Font.BOLD,20));
+        id4.setFont(new Font("chivo",Font.BOLD,20));
         f.add(id4);
 
         t4=new JTextField();
@@ -87,7 +87,7 @@ class UpdateStudent implements ActionListener{
 
         id5= new JLabel("Email");
         id5.setBounds(50,300,100,30);
-        id5.setFont(new Font("serif",Font.BOLD,20));
+        id5.setFont(new Font("chivo",Font.BOLD,20));
         f.add(id5);
 
         t5=new JTextField();
@@ -96,7 +96,7 @@ class UpdateStudent implements ActionListener{
 
         id6= new JLabel("Phone");
         id6.setBounds(400,300,100,30);
-        id6.setFont(new Font("serif",Font.BOLD,20));
+        id6.setFont(new Font("chivo",Font.BOLD,20));
         f.add(id6);
 
         t6=new JTextField();
@@ -105,7 +105,7 @@ class UpdateStudent implements ActionListener{
 
         id7= new JLabel("ID number");
         id7.setBounds(50,360,100,30);
-        id7.setFont(new Font("serif",Font.BOLD,20));
+        id7.setFont(new Font("chivo",Font.BOLD,20));
         f.add(id7);
 
         t7=new JTextField();
@@ -114,7 +114,7 @@ class UpdateStudent implements ActionListener{
 
         id9= new JLabel("Faculty");
         id9.setBounds(400,360,130,30);
-        id9.setFont(new Font("serif",Font.BOLD,20));    
+        id9.setFont(new Font("chivo",Font.BOLD,20));
         f.add(id9);
 
         t8=new JTextField();
@@ -122,14 +122,14 @@ class UpdateStudent implements ActionListener{
         f.add(t8);
         
         b = new JButton("Submit");
-        b.setBackground(Color.BLACK);
+        b.setBackground(new Color(57, 88, 119));
         b.setForeground(Color.WHITE);
         b.setBounds(250,500,150,40);
         
         f.add(b);
 
         b1=new JButton("Cancel");   
-        b1.setBackground(Color.BLACK);
+        b1.setBackground(new Color(57, 88, 119));
         b1.setForeground(Color.WHITE);
         b1.setBounds(450,500,150,40);
         
