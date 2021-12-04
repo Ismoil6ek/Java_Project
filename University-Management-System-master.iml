@@ -7,14 +7,15 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.25" level="application" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../rs2xml.jar!/" />
+          <root url="jar://C:/Program Files/Java/rs2xml.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$MODULE_DIR$/../rs2xml.jar!/src" />
+          <root url="jar://C:/Program Files/Java/rs2xml.jar!/src" />
         </SOURCES>
       </library>
     </orderEntry>
