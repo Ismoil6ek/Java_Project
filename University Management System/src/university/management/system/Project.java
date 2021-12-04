@@ -153,7 +153,6 @@ public class Project extends JFrame implements ActionListener{
         
         JMenu report = new JMenu("Update Details");
         JMenuItem r1 = new JMenuItem("Update Students");
-        JMenuItem r2 = new JMenuItem("Update Teachers");
         report.setForeground(Color.RED);
         
         r1.setFont(new Font("monospaced",Font.BOLD,16));
@@ -166,15 +165,7 @@ public class Project extends JFrame implements ActionListener{
         
         r1.addActionListener(this);
         
-        r2.setFont(new Font("monospaced",Font.BOLD,16));
-        ImageIcon iconn = new ImageIcon(ClassLoader.getSystemResource("university/management/system/icons/icon6.png"));
-        Image imagee = iconn.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
-        r2.setIcon(new ImageIcon(imagee));
-        r2.setMnemonic('F');
-        r2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_R, ActionEvent.CTRL_MASK));
-        r2.setBackground(Color.WHITE);
-        
-        r2.addActionListener(this);
+
         
         
         
@@ -281,7 +272,6 @@ public class Project extends JFrame implements ActionListener{
         user.add(u2);
         
         report.add(r1);
-        report.add(r2);
         
         fee.add(s1);
         fee.add(s2);

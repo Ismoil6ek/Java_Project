@@ -14,10 +14,9 @@ import java.awt.event.*;
 class UpdateStudent implements ActionListener{
 
     JFrame f;
-    JLabel id,id1,id2,id3,id4,id5,id6,id7,id8,id9,id10,id11,id12,id15,lab,lab1,lab2;
+    JLabel id,id1,id2,id3,id4,id5,id6,id7,id8,id9;
     JTextField t,t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14;
-    JButton b,b1,b2; 
-    String id_emp;
+    JButton b,b1,b2;
 
     UpdateStudent(){;
         f=new JFrame("Update Student details");
@@ -26,7 +25,7 @@ class UpdateStudent implements ActionListener{
         f.setBackground(Color.white);
         f.setLayout(null);
 
-        JLabel l1 = new JLabel("Enter roll number to update the data of student");
+        JLabel l1 = new JLabel("Enter ID number to update the data of student");
         l1.setBounds(50,100,500,30);
         l1.setFont(new Font("serif",Font.ITALIC,20));
         f.add(l1);
@@ -50,136 +49,89 @@ class UpdateStudent implements ActionListener{
         f.add(id8);
 
 
-        id1 = new JLabel("Name");
-        id1.setBounds(50,170,100,30);
+        id1 = new JLabel("Full name");
+        id1.setBounds(50,180,100,30);
         id1.setFont(new Font("serif",Font.BOLD,20));
         f.add(id1);
 
         t1=new JTextField();
-        t1.setBounds(200,170,150,30);
+        t1.setBounds(200,180,150,30);
         f.add(t1);
 
-        id2 = new JLabel("Father's Name");
-        id2.setBounds(400,170,200,30);
+        id2 = new JLabel("Entrance date");
+        id2.setBounds(400,180,200,30);
         id2.setFont(new Font("serif",Font.BOLD,20));
         f.add(id2);
 
         t2=new JTextField();
-        t2.setBounds(600,170,150,30);
+        t2.setBounds(600,180,150,30);
         f.add(t2);
 
-        id3= new JLabel("Age");
-        id3.setBounds(50,220,100,30);
+        id3= new JLabel("Address");
+        id3.setBounds(50,240,100,30);
         id3.setFont(new Font("serif",Font.BOLD,20));
         f.add(id3);
 
         t3=new JTextField();
-        t3.setBounds(200,220,150,30);
+        t3.setBounds(200,240,150,30);
         f.add(t3);
 
-        id4= new JLabel("DOB (dd/mm/yyyy)");  
-        id4.setBounds(400,220,200,30);
+        id4= new JLabel("Date of birth");
+        id4.setBounds(400,240,200,30);
         id4.setFont(new Font("serif",Font.BOLD,20));
         f.add(id4);
 
         t4=new JTextField();
-        t4.setBounds(600,220,150,30);
+        t4.setBounds(600,240,150,30);
         f.add(t4);
 
-        id5= new JLabel("Address");
-        id5.setBounds(50,270,100,30);
+        id5= new JLabel("Email");
+        id5.setBounds(50,300,100,30);
         id5.setFont(new Font("serif",Font.BOLD,20));
         f.add(id5);
 
         t5=new JTextField();
-        t5.setBounds(200,270,150,30);
+        t5.setBounds(200,300,150,30);
         f.add(t5);
 
         id6= new JLabel("Phone");
-        id6.setBounds(400,270,100,30);
+        id6.setBounds(400,300,100,30);
         id6.setFont(new Font("serif",Font.BOLD,20));
         f.add(id6);
 
         t6=new JTextField();
-        t6.setBounds(600,270,150,30);
+        t6.setBounds(600,300,150,30);
         f.add(t6);
 
-        id7= new JLabel("Email Id");
-        id7.setBounds(50,320,100,30);
+        id7= new JLabel("ID number");
+        id7.setBounds(50,360,100,30);
         id7.setFont(new Font("serif",Font.BOLD,20));
         f.add(id7);
 
         t7=new JTextField();
-        t7.setBounds(200,320,150,30);
+        t7.setBounds(200,360,150,30);
         f.add(t7);
 
-        id9= new JLabel("Class X(%)");
-        id9.setBounds(400,320,130,30);
+        id9= new JLabel("Faculty");
+        id9.setBounds(400,360,130,30);
         id9.setFont(new Font("serif",Font.BOLD,20));    
         f.add(id9);
 
         t8=new JTextField();
-        t8.setBounds(600,320,150,30);
+        t8.setBounds(600,360,150,30);
         f.add(t8);
-
-        id10= new JLabel("Class XII(%)");
-        id10.setBounds(50,370,130,30);
-        id10.setFont(new Font("serif",Font.BOLD,20));
-        f.add(id10);
-
-        t9=new JTextField();
-        t9.setBounds(200,370,150,30);
-        f.add(t9);
-
-
-        id11= new JLabel("Aadhar No");
-        id11.setBounds(400,370,100,30);
-        id11.setFont(new Font("serif",Font.BOLD,20));
-        f.add(id11);
-
-        t10=new JTextField();
-        t10.setBounds(600,370,150,30);
-        f.add(t10);
-
-        id12= new JLabel("Roll No");
-        id12.setBounds(50,420,150,30);
-        id12.setFont(new Font("serif",Font.BOLD,20));
-        f.add(id12);
-
-        t11=new JTextField();   
-        t11.setBounds(200,420,150,30);
-        f.add(t11);
-
-
-        lab=new JLabel("Course");
-        lab.setBounds(400,420,150,30);
-	lab.setFont(new Font("serif",Font.BOLD,20));
-        f.add(lab);
-            
-        t13=new JTextField();   
-        t13.setBounds(600,420,150,30);
-        f.add(t13);
-        
-        lab2=new JLabel("Branch");
-        lab2.setBounds(50,470,150,30);
-	lab2.setFont(new Font("serif",Font.BOLD,20));
-        f.add(lab2);
-            
-        t14=new JTextField();   
-        t14.setBounds(200,470,150,30);
-        f.add(t14);
         
         b = new JButton("Submit");
         b.setBackground(Color.BLACK);
         b.setForeground(Color.WHITE);
-        b.setBounds(250,520,150,40);
+        b.setBounds(250,500,150,40);
         
         f.add(b);
 
         b1=new JButton("Cancel");   
         b1.setBackground(Color.BLACK);
         b1.setForeground(Color.WHITE);
-        b1.setBounds(450,520,150,40);
+        b1.setBounds(450,500,150,40);
         
         f.add(b1);
         
