@@ -18,59 +18,71 @@ public class StudentDetails extends JFrame implements ActionListener{
     JTable t1;
     JButton b1,b2,b3;
     JTextField t2;
-    String x[] = {"First name","Surname","Student ID","Date of Birth","Phone","Email","Address","Faculty","Entrance year"};
+    String x[] = {"Full name","Entrance date","Address","Date of Birth","Email","Phone","ID number","Faculty"};
     String y[][] = new String[20][13];
     int i=0, j=0;
     StudentDetails(){
         super("Student Details");
         setSize(1260,650);
-        setLocation(50,55);
+        setLocation(200,200);
         setLayout(null);
         
         l1 = new JLabel("Enter ID number to search Student : ");
-        l1.setBounds(50,400,400,30);
-        l1.setFont(new Font("chive",Font.BOLD,20));
+        l1.setBounds(50,360,400,30);
+        l1.setFont(new Font("serif",Font.BOLD,20));
         add(l1);
         
         t2 = new JTextField();
-        t2.setBounds(400,400,200,30);
+        t2.setBounds(400,360,200,30);
         add(t2);
         
         b1 = new JButton("Search");
-        b1.setBackground(new Color(57, 88, 119));
+        b1.setBackground(Color.BLACK);
         b1.setForeground(Color.WHITE);
-        b1.setBounds(620, 400, 100 ,30);
+        b1.setBounds(620, 360, 100 ,30);
         add(b1);
             
         l2 = new JLabel("Add New Student");
-        l2.setBounds(50,470,400,30);
-        l2.setFont(new Font("chive",Font.BOLD,20));
+        l2.setBounds(50,450,400,30);
+        l2.setFont(new Font("serif",Font.BOLD,20));
         add(l2);
         
         b2 = new JButton("Add Student");
-        b2.setBackground(new Color(57, 88, 119));
+        b2.setBackground(Color.BLACK);
         b2.setForeground(Color.WHITE);
-        b2.setBounds(300, 470, 150 ,30);
+        b2.setBounds(300, 450, 150 ,30);
         add(b2);
+
+//        l3 = new JLabel("Update Student Details");
+//        l3.setBounds(50,490,400,30);
+//        l3.setFont(new Font("serif",Font.BOLD,20));
+//        add(l3);
+
+//        b3 = new JButton("Update Student");
+//        b3.setBackground(Color.BLACK);
+//        b3.setForeground(Color.WHITE);
+//        b3.setBounds(300, 490, 150 ,30);
+//        add(b3);
         
         b1.addActionListener(this);
         b2.addActionListener(this);
+//        b3.addActionListener(this);
         
         
         try{
             conn c1  = new conn();
-            String s1 = "select * from student";
+            String s1 = "select * from students";
             ResultSet rs  = c1.s.executeQuery(s1);
             while(rs.next()){
-                y[i][j++]=rs.getString("Full name");
-                y[i][j++]=rs.getString("Age");
-                y[i][j++]=rs.getString("Address");
-                y[i][j++]=rs.getString("Date of birth");
-                y[i][j++]=rs.getString("Email");
-                y[i][j++]=rs.getString("Phone");
-                y[i][j++]=rs.getString("ID number");
-                y[i][j++]=rs.getString("Faculty");
-
+                y[i][j++]=rs.getString("first_name");
+                y[i][j++]=rs.getString("surname");
+                y[i][j++]=rs.getString("student_id");
+                y[i][j++]=rs.getString("birth_date");
+                y[i][j++]=rs.getString("phone");
+                y[i][j++]=rs.getString("email");
+                y[i][j++]=rs.getString("address");
+                y[i][j++]=rs.getString("faculty");
+                y[i][j++]=rs.getString("entrance_year");
                 i++;
                 j=0;
             }
