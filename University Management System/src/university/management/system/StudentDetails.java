@@ -18,7 +18,7 @@ public class StudentDetails extends JFrame implements ActionListener{
     JTable t1;
     JButton b1,b2,b3;
     JTextField t2;
-    String x[] = {"Full name","Entrance date","Address","Date of Birth","Email","Phone","ID number","Faculty"};
+    String x[] = {"First name","Surname","Student ID","Date of Birth","Phone","Email","Address","Faculty","Entrance year"};
     String y[][] = new String[20][13];
     int i=0, j=0;
     StudentDetails(){
