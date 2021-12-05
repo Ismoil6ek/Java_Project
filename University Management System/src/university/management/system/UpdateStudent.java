@@ -14,8 +14,8 @@ import java.awt.event.*;
 class UpdateStudent implements ActionListener{
 
     JFrame f;
-    JLabel id,id1,id2,id3,id4,id5,id6,id7,id8,id9;
-    JTextField t,t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14;
+    JLabel id1,id2,id3,id4,id5,id6,id7,id8,id9,id10;
+    JTextField t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14,t15;
     JButton b,b1,b2;
 
     UpdateStudent(){;
@@ -34,7 +34,7 @@ class UpdateStudent implements ActionListener{
         t12.setBounds(500,100,200,30);
         f.add(t12);
         
-        b2 = new JButton("Update");
+        b2 = new JButton("Search");
         b2.setBackground(new Color(57, 88, 119));
         b2.setForeground(Color.WHITE);
         b2.setBounds(720,100,100,30);
@@ -49,7 +49,7 @@ class UpdateStudent implements ActionListener{
         f.add(id8);
 
 
-        id1 = new JLabel("Full name");
+        id1 = new JLabel("First name");
         id1.setBounds(50,180,100,30);
         id1.setFont(new Font("chivo",Font.BOLD,20));
         f.add(id1);
@@ -58,7 +58,7 @@ class UpdateStudent implements ActionListener{
         t1.setBounds(200,180,150,30);
         f.add(t1);
 
-        id2 = new JLabel("Entrance date");
+        id2 = new JLabel("Surname");
         id2.setBounds(400,180,200,30);
         id2.setFont(new Font("chivo",Font.BOLD,20));
         f.add(id2);
@@ -67,7 +67,7 @@ class UpdateStudent implements ActionListener{
         t2.setBounds(600,180,150,30);
         f.add(t2);
 
-        id3= new JLabel("Address");
+        id3= new JLabel("Student ID");
         id3.setBounds(50,240,100,30);
         id3.setFont(new Font("chivo",Font.BOLD,20));
         f.add(id3);
@@ -103,7 +103,7 @@ class UpdateStudent implements ActionListener{
         t6.setBounds(600,300,150,30);
         f.add(t6);
 
-        id7= new JLabel("ID number");
+        id7= new JLabel("Address");
         id7.setBounds(50,360,100,30);
         id7.setFont(new Font("chivo",Font.BOLD,20));
         f.add(id7);
@@ -120,6 +120,15 @@ class UpdateStudent implements ActionListener{
         t8=new JTextField();
         t8.setBounds(600,360,150,30);
         f.add(t8);
+
+        id10= new JLabel("Entrance year");
+        id10.setBounds(50,420,150,30);
+        id10.setFont(new Font("chivo",Font.BOLD,20));
+        f.add(id10);
+
+        t15=new JTextField();
+        t15.setBounds(200,420,150,30);
+        f.add(t15);
         
         b = new JButton("Submit");
         b.setBackground(new Color(57, 88, 119));

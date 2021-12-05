@@ -29,7 +29,7 @@ public class StudentDetails extends JFrame implements ActionListener{
         
         l1 = new JLabel("Enter ID number to search Student : ");
         l1.setBounds(50,360,400,30);
-        l1.setFont(new Font("serif",Font.BOLD,20));
+        l1.setFont(new Font("chive",Font.BOLD,20));
         add(l1);
         
         t2 = new JTextField();
@@ -44,7 +44,7 @@ public class StudentDetails extends JFrame implements ActionListener{
             
         l2 = new JLabel("Add New Student");
         l2.setBounds(50,450,400,30);
-        l2.setFont(new Font("serif",Font.BOLD,20));
+        l2.setFont(new Font("chive",Font.BOLD,20));
         add(l2);
         
         b2 = new JButton("Add Student");
@@ -53,20 +53,9 @@ public class StudentDetails extends JFrame implements ActionListener{
         b2.setBounds(300, 450, 150 ,30);
         add(b2);
 
-//        l3 = new JLabel("Update Student Details");
-//        l3.setBounds(50,490,400,30);
-//        l3.setFont(new Font("serif",Font.BOLD,20));
-//        add(l3);
-
-//        b3 = new JButton("Update Student");
-//        b3.setBackground(Color.BLACK);
-//        b3.setForeground(Color.WHITE);
-//        b3.setBounds(300, 490, 150 ,30);
-//        add(b3);
         
         b1.addActionListener(this);
         b2.addActionListener(this);
-//        b3.addActionListener(this);
         
         
         try{
@@ -117,7 +106,6 @@ public class StudentDetails extends JFrame implements ActionListener{
             new AddStudent().f.setVisible(true);
             this.setVisible(false);
         }else if(ae.getSource() == b3){
-            //new UpdateStudent().setVisible(true);
             this.setVisible(false);
         }
     }
