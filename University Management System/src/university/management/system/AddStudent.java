@@ -113,7 +113,7 @@ class AddStudent implements ActionListener{
         entrance_yeartext.setBounds(200,500,150,30);
         id15.add(entrance_yeartext);
         
-        b = new JButton("Submit");
+        b = new JButton("Add Student");
         b.setBackground(new Color(57, 88, 119));
         b.setForeground(Color.WHITE);
         b.setBounds(300,560,150,40);

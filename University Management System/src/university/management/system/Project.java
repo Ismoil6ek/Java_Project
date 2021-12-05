@@ -31,26 +31,10 @@ public class Project extends JFrame implements ActionListener{
         u1.setMnemonic('C');
         u1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_P, ActionEvent.CTRL_MASK));
         u1.setBackground(Color.WHITE);
-        
 
-        
         u1.addActionListener(this);
-        
-        JMenu report = new JMenu("Update Details");
-        JMenuItem r1 = new JMenuItem("Update Students");
-        report.setForeground(new Color(57, 88, 119));
-        
-        r1.setFont(new Font("monospaced",Font.BOLD,16));
-        ImageIcon icon7 = new ImageIcon(ClassLoader.getSystemResource("university/management/system/icons/icon5.png"));
-        Image image7 = icon7.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
-        r1.setIcon(new ImageIcon(image7));
-        r1.setMnemonic('E');
-        r1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_R, ActionEvent.CTRL_MASK));
-        r1.setBackground(Color.WHITE);
-        
-        r1.addActionListener(this);
 
-        
+
         JMenu fee = new JMenu("Fee Details");
         JMenuItem s1 = new JMenuItem("Tuition Fees");
         fee.setForeground(new Color(57, 88, 119));
@@ -119,8 +103,7 @@ public class Project extends JFrame implements ActionListener{
         aboutus.addActionListener(this);
 
         user.add(u1);
-        
-        report.add(r1);
+
         
         fee.add(s1);
         
@@ -130,7 +113,6 @@ public class Project extends JFrame implements ActionListener{
 
 
         mb.add(user);
-        mb.add(report);
         mb.add(fee);
         mb.add(utility);
         mb.add(about);
@@ -145,10 +127,6 @@ public class Project extends JFrame implements ActionListener{
         String msg = ae.getActionCommand();
         if(msg.equals("Student Details")){
             new StudentDetails().setVisible(true);
-        }
-        else if(msg.equals("Update Students")){
-            new UpdateStudent().f.setVisible(true);
-           
         }
 
         else if(msg.equals("Tuition Fees")){
