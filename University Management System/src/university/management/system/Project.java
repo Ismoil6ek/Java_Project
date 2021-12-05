@@ -9,6 +9,7 @@ public class Project extends JFrame implements ActionListener{
         super("University Management System");
         
         setSize(1320,720);
+        setLocation(20,20);
         
         ImageIcon ic =  new ImageIcon(ClassLoader.getSystemResource("university/management/system/icons/third.jpg"));
         Image i3 = ic.getImage().getScaledInstance(1300, 900,Image.SCALE_DEFAULT);
@@ -18,36 +19,9 @@ public class Project extends JFrame implements ActionListener{
         add(l1);
         
         JMenuBar mb  = new JMenuBar();
-//        JMenu master = new JMenu("Master");
-//        JMenuItem m1 = new JMenuItem("New Faculty");
-//        JMenuItem m2 = new JMenuItem("New Student Admission");
-//        master.setForeground(Color.BLUE);
-//
-//
-//        m1.setFont(new Font("monospaced",Font.BOLD,16));
-//        ImageIcon icon1 = new ImageIcon(ClassLoader.getSystemResource("university/management/system/icons/icon1.png"));
-//        Image image1 = icon1.getImage().getScaledInstance(25, 25,Image.SCALE_DEFAULT);
-//        m1.setIcon(new ImageIcon(image1));
-//        m1.setMnemonic('A');
-//        m1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_D, ActionEvent.CTRL_MASK));
-//        m1.setBackground(Color.WHITE);
-//
-//        m2.setFont(new Font("monospaced",Font.BOLD,16));
-//        ImageIcon icon2 = new ImageIcon(ClassLoader.getSystemResource("university/management/system/icons/icon2.png"));
-//        Image image2 = icon2.getImage().getScaledInstance(20, 20,Image.SCALE_DEFAULT);
-//        m2.setIcon(new ImageIcon(image2));
-//        m2.setMnemonic('B');
-//        m2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_M, ActionEvent.CTRL_MASK));
-//        m2.setBackground(Color.WHITE);
-//
-//
-//        m1.addActionListener(this);
-//        m2.addActionListener(this);
-//
-
-  
         JMenu user = new JMenu("Details");
         JMenuItem u1 = new JMenuItem("Student Details");
+        user.setForeground(Color.BLUE);
 
         
         u1.setFont(new Font("monospaced",Font.BOLD,16));
@@ -78,8 +52,7 @@ public class Project extends JFrame implements ActionListener{
 
         
         JMenu fee = new JMenu("Fee Details");
-        JMenuItem s1 = new JMenuItem("Fee Structure");
-        JMenuItem s2 = new JMenuItem("Student Fee Form");
+        JMenuItem s1 = new JMenuItem("Tuition Fees");
         fee.setForeground(Color.BLUE);
         
         s1.setFont(new Font("monospaced",Font.BOLD,16));
@@ -91,16 +64,6 @@ public class Project extends JFrame implements ActionListener{
         s1.setBackground(Color.WHITE);
         
         s1.addActionListener(this);
-        
-        s2.setFont(new Font("monospaced",Font.BOLD,16));
-        ImageIcon icon16 = new ImageIcon(ClassLoader.getSystemResource("university/management/system/icons/icon8.png"));
-        Image image17 = icon16.getImage().getScaledInstance(20, 20,Image.SCALE_DEFAULT);
-        s2.setIcon(new ImageIcon(image17));
-        s2.setMnemonic('H');
-        s2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_R, ActionEvent.CTRL_MASK));
-        s2.setBackground(Color.WHITE);
-        
-        s2.addActionListener(this);
         
 
         JMenu utility = new JMenu("Utility");
@@ -160,7 +123,6 @@ public class Project extends JFrame implements ActionListener{
         report.add(r1);
         
         fee.add(s1);
-        fee.add(s2);
         
         utility.add(ut1);
         utility.add(ut2);
@@ -172,11 +134,10 @@ public class Project extends JFrame implements ActionListener{
         mb.add(fee);
         mb.add(utility);
         mb.add(about);
-        //      mb.add(exit);
 
         setJMenuBar(mb);
         
-        setFont(new Font("Senserif",Font.BOLD,16));
+        setFont(new Font("chive",Font.BOLD,16));
         setLayout(new FlowLayout());
         setVisible(false);
     }
@@ -190,7 +151,7 @@ public class Project extends JFrame implements ActionListener{
            
         }
 
-        else if(msg.equals("Fee Structure")){
+        else if(msg.equals("Tuition Fees")){
             new FeeStructure().setVisible(true);
            
         }
@@ -210,25 +171,12 @@ public class Project extends JFrame implements ActionListener{
             
             try{
                 Runtime.getRuntime().exec("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
-            }catch(Exception e){ }
-//        }else if(msg.equals("Exit")){
-//            System.exit(0);
+            }catch(Exception e){
+
+            }
         }else if(msg.equals("About Us")){
             new AboutUs().setVisible(true);
-        }//else if(msg.equals("Student Attendance")){
-//            new StudentAttendance().setVisible(true);
-//        }else if(msg.equals("Teacher Attendance")){
-//            new TeacherAttendance().setVisible(true);
-//        }else if(msg.equals("Student Attendance Detail")){
-//            new StudentAttendanceDetail().setVisible(true);
-//        }else if(msg.equals("Teacher Attendance Detail")){
-//            new TeacherAttendanceDetail().setVisible(true);
-//        }else if(msg.equals("Examination Details")){
-//            new ExaminationDetails().setVisible(true);
-//        }else if(msg.equals("Enter Marks")){
-//            new EnterMarks().setVisible(true);
-//        }
-        
+        }
     }
     
     

@@ -18,7 +18,7 @@ public class FeeStructure extends JFrame{
     public FeeStructure(){
         
         setSize(1000,500);
-        setLocation(180,100);
+        setLocation(180,130);
         setLayout(null);
         
         i1 = new JLabel("Tuition Fees");
