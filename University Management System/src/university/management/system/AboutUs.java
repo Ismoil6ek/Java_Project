@@ -15,7 +15,7 @@ public class AboutUs extends JFrame{
             
             super("About Us - IUT");
             setBackground(new Color(197, 226, 247));
-            setBounds(300, 150, 700, 500);
+            setBounds(330, 130, 700, 500);
 		
             contentPane = new JPanel();
             setContentPane(contentPane);

@@ -24,7 +24,7 @@ public class StudentDetails extends JFrame implements ActionListener{
     StudentDetails(){
         super("Student Details");
         setSize(1260,650);
-        setLocation(200,200);
+        setLocation(50,55);
         setLayout(null);
         
         l1 = new JLabel("Enter ID number to search Student : ");
@@ -37,7 +37,7 @@ public class StudentDetails extends JFrame implements ActionListener{
         add(t2);
         
         b1 = new JButton("Search");
-        b1.setBackground(Color.BLACK);
+        b1.setBackground(new Color(57, 88, 119));
         b1.setForeground(Color.WHITE);
         b1.setBounds(620, 360, 100 ,30);
         add(b1);
@@ -48,7 +48,7 @@ public class StudentDetails extends JFrame implements ActionListener{
         add(l2);
         
         b2 = new JButton("Add Student");
-        b2.setBackground(Color.BLACK);
+        b2.setBackground(new Color(57, 88, 119));
         b2.setForeground(Color.WHITE);
         b2.setBounds(300, 450, 150 ,30);
         add(b2);
