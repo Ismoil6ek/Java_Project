@@ -155,10 +155,6 @@ public class Project extends JFrame implements ActionListener{
             new FeeStructure().setVisible(true);
            
         }
-        else if(msg.equals("Student Fee Form")){
-            new StudentFeeForm().setVisible(true);
-           
-        }
         else if(msg.equals("Notepad")){
             try{
                 Runtime.getRuntime().exec("notepad.exe");
