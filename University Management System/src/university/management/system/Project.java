@@ -21,7 +21,7 @@ public class Project extends JFrame implements ActionListener{
         JMenuBar mb  = new JMenuBar();
         JMenu user = new JMenu("Details");
         JMenuItem u1 = new JMenuItem("Student Details");
-        user.setForeground(Color.BLUE);
+        user.setForeground(new Color(83, 120, 158));
 
         
         u1.setFont(new Font("monospaced",Font.BOLD,16));
@@ -38,7 +38,7 @@ public class Project extends JFrame implements ActionListener{
         
         JMenu report = new JMenu("Update Details");
         JMenuItem r1 = new JMenuItem("Update Students");
-        report.setForeground(Color.RED);
+        report.setForeground(new Color(57, 88, 119));
         
         r1.setFont(new Font("monospaced",Font.BOLD,16));
         ImageIcon icon7 = new ImageIcon(ClassLoader.getSystemResource("university/management/system/icons/icon5.png"));
@@ -53,7 +53,7 @@ public class Project extends JFrame implements ActionListener{
         
         JMenu fee = new JMenu("Fee Details");
         JMenuItem s1 = new JMenuItem("Tuition Fees");
-        fee.setForeground(Color.BLUE);
+        fee.setForeground(new Color(83, 120, 158));
         
         s1.setFont(new Font("monospaced",Font.BOLD,16));
         ImageIcon icon14 = new ImageIcon(ClassLoader.getSystemResource("university/management/system/icons/icon7.png"));
@@ -70,7 +70,7 @@ public class Project extends JFrame implements ActionListener{
         JMenuItem ut1 = new JMenuItem("Notepad");
         JMenuItem ut2 = new JMenuItem("Calculator");
         JMenuItem ut3 = new JMenuItem("Web Browser");
-        utility.setForeground(Color.RED); 
+        utility.setForeground(new Color(57, 88, 119));
         
 
         ut1.setFont(new Font("monospaced",Font.BOLD,16));
@@ -106,7 +106,7 @@ public class Project extends JFrame implements ActionListener{
         
         JMenu about = new JMenu("About");
         JMenuItem aboutus = new JMenuItem("About Us");
-        about.setForeground(Color.BLUE);
+        about.setForeground(new Color(83, 120, 158));
         
         aboutus.setFont(new Font("monospaced",Font.BOLD,16));
         ImageIcon icon21 = new ImageIcon(ClassLoader.getSystemResource("university/management/system/icons/icon13.jpg"));
