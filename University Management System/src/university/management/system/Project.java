@@ -21,7 +21,7 @@ public class Project extends JFrame implements ActionListener{
         JMenuBar mb  = new JMenuBar();
         JMenu user = new JMenu("Details");
         JMenuItem u1 = new JMenuItem("Student Details");
-        user.setForeground(new Color(83, 120, 158));
+        user.setForeground(new Color(57, 88, 119));
 
         
         u1.setFont(new Font("monospaced",Font.BOLD,16));
@@ -53,7 +53,7 @@ public class Project extends JFrame implements ActionListener{
         
         JMenu fee = new JMenu("Fee Details");
         JMenuItem s1 = new JMenuItem("Tuition Fees");
-        fee.setForeground(new Color(83, 120, 158));
+        fee.setForeground(new Color(57, 88, 119));
         
         s1.setFont(new Font("monospaced",Font.BOLD,16));
         ImageIcon icon14 = new ImageIcon(ClassLoader.getSystemResource("university/management/system/icons/icon7.png"));
@@ -106,7 +106,7 @@ public class Project extends JFrame implements ActionListener{
         
         JMenu about = new JMenu("About");
         JMenuItem aboutus = new JMenuItem("About Us");
-        about.setForeground(new Color(83, 120, 158));
+        about.setForeground(new Color(57, 88, 119));
         
         aboutus.setFont(new Font("monospaced",Font.BOLD,16));
         ImageIcon icon21 = new ImageIcon(ClassLoader.getSystemResource("university/management/system/icons/icon13.jpg"));

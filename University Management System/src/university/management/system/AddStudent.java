@@ -147,7 +147,7 @@ class AddStudent implements ActionListener{
         String address = addresstext.getText();;
         String faculty = (String)facultytext.getSelectedItem();
         String entrance_year = entrance_yeartext.getText();
-        
+
         if(ae.getSource() == b){
             try{
                 conn cc = new conn();
