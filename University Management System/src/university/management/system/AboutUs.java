@@ -31,13 +31,13 @@ public class AboutUs extends JFrame{
 
 
             JLabel l3 = new JLabel("INHA University");
-            l3.setForeground(new Color(0,0,255));
+            l3.setForeground(new Color(57, 88, 119));
             l3.setFont(new Font("Trebuchet MS", Font.BOLD | Font.ITALIC, 34));
             l3.setBounds(50, 90, 300, 55);
             contentPane.add(l3);
 
             JLabel l4 = new JLabel("in Tashkent");
-            l4.setForeground(new Color(0,0,255));
+            l4.setForeground(new Color(57, 88, 119));
             l4.setFont(new Font("Trebuchet MS", Font.BOLD | Font.ITALIC, 34));
             l4.setBounds(80, 140, 405, 40);
             contentPane.add(l4);

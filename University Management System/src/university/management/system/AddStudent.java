@@ -151,8 +151,10 @@ class AddStudent implements ActionListener{
         if(ae.getSource() == b){
             try{
                 conn cc = new conn();
-                String q = "insert into students values('"+first_name+"','"+surname+"','"+student_id+"','"+birth_date+"','"+phone+"','"+email+"','"+address+"','"+faculty+"','"+entrance_year+"')";
-                cc.s.executeUpdate(q);
+                String q = "insert into students values (\"" + first_name + "\", \"" + surname + "\", \"" + student_id + "\", " +
+                        "\"" + birth_date + "\", \"" + phone + "\", \"" + email + "\", \"" + address + "\", " +
+                        "\"" + faculty + "\", \"" + entrance_year + "\")";
+                int count = cc.s.executeUpdate(q);
                 JOptionPane.showMessageDialog(null,"Student Details Inserted Successfully");
                 f.setVisible(false);
             }catch(Exception ee){
