@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package university.management.system;
 
 
@@ -27,7 +22,7 @@ public class StudentDetails extends JFrame implements ActionListener{
         setLocation(50,55);
         setLayout(null);
         
-        l1 = new JLabel("Enter ID number to search Student : ");
+        l1 = new JLabel("Enter student ID to delete : ");
         l1.setBounds(50,360,400,30);
         l1.setFont(new Font("chive",Font.BOLD,20));
         add(l1);
@@ -36,7 +31,7 @@ public class StudentDetails extends JFrame implements ActionListener{
         t2.setBounds(400,360,200,30);
         add(t2);
         
-        b1 = new JButton("Search");
+        b1 = new JButton("Delete");
         b1.setBackground(new Color(57, 88, 119));
         b1.setForeground(Color.WHITE);
         b1.setBounds(620, 360, 100 ,30);
@@ -47,7 +42,7 @@ public class StudentDetails extends JFrame implements ActionListener{
         l2.setFont(new Font("chive",Font.BOLD,20));
         add(l2);
         
-        b2 = new JButton("Add Student");
+        b2 = new JButton("Add");
         b2.setBackground(new Color(57, 88, 119));
         b2.setForeground(Color.WHITE);
         b2.setBounds(300, 450, 150 ,30);
@@ -96,7 +91,7 @@ public class StudentDetails extends JFrame implements ActionListener{
         if(ae.getSource() == b1){
             try{
                 String a = t2.getText();
-                String q = "delete from student where rollno = '"+a+"'";
+                String q = "delete from students where student_id = '"+a+"'";
                 c1.s.executeUpdate(q);
                 this.setVisible(false);
                 new StudentDetails().setVisible(true);
